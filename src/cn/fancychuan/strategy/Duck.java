@@ -2,14 +2,14 @@ package cn.fancychuan.strategy;
 
 public abstract class Duck {
 
-	FlyBehavior flyBehavior ;  // ÕâÀïÖ®ËùÒÔ°ÑÀàĞÍÖ¸¶¨Îª½Ó¿Ú£¬Ä¿µÄÊÇÎªÁËÃæÏò½Ó¿Ú±à³Ì£¬ÔÚ×ÓÀàÖĞ¿ÉÒÔËæÊ±Ìæ»»³É½Ó¿ÚµÄÊµÏÖÀà£¬±ÈÈç FlyWithWings¡¢FlyNoWay
+	FlyBehavior flyBehavior ;  // è¿™é‡Œä¹‹æ‰€ä»¥æŠŠç±»å‹æŒ‡å®šä¸ºæ¥å£ï¼Œç›®çš„æ˜¯ä¸ºäº†é¢å‘æ¥å£ç¼–ç¨‹ï¼Œåœ¨å­ç±»ä¸­å¯ä»¥éšæ—¶æ›¿æ¢æˆæ¥å£çš„å®ç°ç±»ï¼Œæ¯”å¦‚ FlyWithWingsã€FlyNoWay
 	QuackBehavior quackBehavior ;
 	
 	public void performFly() {
-		flyBehavior.fly() ;  // Î¯ÍĞ¸øĞĞÎªÀàÊµÏÖflyµÄ¹¦ÄÜ
+		flyBehavior.fly() ;  // å§”æ‰˜ç»™è¡Œä¸ºç±»å®ç°flyçš„åŠŸèƒ½
 	}
 	
-	public void performQuack() { // Èç¹ûÓÃ public static void performQuack() ÄÇÃ´¶¨ÒåquackBehavior µÄÊ±ºòĞèÒªÓÃstatic ¼´£º static QuackBehavior quackBehavior ;
+	public void performQuack() { // å¦‚æœç”¨ public static void performQuack() é‚£ä¹ˆå®šä¹‰quackBehavior çš„æ—¶å€™éœ€è¦ç”¨static å³ï¼š static QuackBehavior quackBehavior ;
 		quackBehavior.quack() ;
 	}
 	
@@ -17,7 +17,7 @@ public abstract class Duck {
 		System.out.println("All ducks can swim!");
 	}
 	
-	public void setFlyBehavior(FlyBehavior fb) { // ÕâÀïÈë²ÎÊÇ FlyBehaviorÀàĞÍµÄfb£¬Ò²¾ÍÊÇËµÈÎºÎÊµÏÖÁËFlyBehavior½Ó¿ÚµÄÀàµÄÊµÀı¶¼¿ÉÒÔ×÷ÎªÕâ¸öº¯ÊıµÄÈë²Î
+	public void setFlyBehavior(FlyBehavior fb) { // è¿™é‡Œå…¥å‚æ˜¯ FlyBehaviorç±»å‹çš„fbï¼Œä¹Ÿå°±æ˜¯è¯´ä»»ä½•å®ç°äº†FlyBehavioræ¥å£çš„ç±»çš„å®ä¾‹éƒ½å¯ä»¥ä½œä¸ºè¿™ä¸ªå‡½æ•°çš„å…¥å‚
 		flyBehavior = fb;
 	}
 	

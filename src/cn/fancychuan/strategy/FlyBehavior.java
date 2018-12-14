@@ -2,5 +2,6 @@ package cn.fancychuan.strategy;
 
 public interface FlyBehavior {
 
-	void fly(); // 在接口中定义的任何变量都是final、static的，定义的方法只能是public（可以省略）要么就是abstract
+	void fly(); // 鍦ㄦ帴鍙ｄ腑瀹氫箟鐨勪换浣曞彉閲忛兘鏄痜inal銆乻tatic鐨勶紝瀹氫箟鐨勬柟娉曞彧鑳芥槸public锛堝彲浠ョ渷鐣ワ級瑕佷箞灏辨槸abstract
 }
+

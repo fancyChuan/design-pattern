@@ -3,6 +3,6 @@ package cn.fancychuan.strategy;
 public class FlyRocketPowered implements FlyBehavior {
 
 	public void fly() {
-		System.out.println("»ğ¼ı¶¯Á¦£¡ ·ÉÑ¼..");
+		System.out.println("ç«ç®­åŠ¨åŠ›ï¼ é£é¸­..");
 	}
 }

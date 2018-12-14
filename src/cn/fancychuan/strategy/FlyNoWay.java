@@ -3,6 +3,6 @@ package cn.fancychuan.strategy;
 public class FlyNoWay implements FlyBehavior {
 
 	public void fly() {
-		System.out.println("ai, ÎÒ¶¼²»ÄÜ·É...");
+		System.out.println("ai, æˆ‘éƒ½ä¸èƒ½é£...");
 	}
 }

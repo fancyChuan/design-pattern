@@ -3,11 +3,11 @@ package cn.fancychuan.strategy;
 public class MallardDuck extends Duck {
 
 	public MallardDuck() {
-		quackBehavior = new Quack() ; // ³éÏó³¬Àà¶¨ÒåÁËquackBehavior£¬ÊÇ½Ó¿ÚÀàĞÍ£¬ÕâÀïÎ¯ÍĞ¸øQuack£¬QuackÊÇÒ»¸öÊµÏÖÁËÌØ¶¨ĞĞÎªµÄÀà
+		quackBehavior = new Quack() ; // æŠ½è±¡è¶…ç±»å®šä¹‰äº†quackBehaviorï¼Œæ˜¯æ¥å£ç±»å‹ï¼Œè¿™é‡Œå§”æ‰˜ç»™Quackï¼ŒQuackæ˜¯ä¸€ä¸ªå®ç°äº†ç‰¹å®šè¡Œä¸ºçš„ç±»
 		flyBehavior = new FlyWithWings() ;
 	}
 	
 	public void display() {
-		System.out.println("ÕâÊÇÒ»Ö» MallardDuck Ñ¼..");
+		System.out.println("è¿™æ˜¯ä¸€åª MallardDuck é¸­..");
 	}
 }

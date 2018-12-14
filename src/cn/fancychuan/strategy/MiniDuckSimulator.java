@@ -3,7 +3,7 @@ package cn.fancychuan.strategy;
 public class MiniDuckSimulator {
 	
 	public void baseDuck() {
-		Duck mallard = new MallardDuck(); // ¶¨ÒåÎª³¬Àà£¬Ò²¾ÍÊÇÃæÏò³¬Àà±à³Ì¡¢Õë¶Ô³¬Àà±à³Ì
+		Duck mallard = new MallardDuck(); // å®šä¹‰ä¸ºè¶…ç±»ï¼Œä¹Ÿå°±æ˜¯é¢å‘è¶…ç±»ç¼–ç¨‹ã€é’ˆå¯¹è¶…ç±»ç¼–ç¨‹
 		mallard.swim();
 		
 		mallard.performFly();
@@ -16,6 +16,6 @@ public class MiniDuckSimulator {
 		model.setFlyBehavior(new FlyRocketPowered());
 		model.performFly();
 		
-		// model.display(); // TODO: ÕâÀï²»ÄÜµ÷ÓÃ¾ßÌåÀàµÄº¯Êı£¬ÒòÎªÖ¸¶¨µÄÀàĞÍÊÇDuck³¬Àà£¬ÄÇÒªÔõÃ´²ÅÄÜµ÷ÓÃ×Ô¼ºµÄdisplay ?
+		// model.display(); // TODO: è¿™é‡Œä¸èƒ½è°ƒç”¨å…·ä½“ç±»çš„å‡½æ•°ï¼Œå› ä¸ºæŒ‡å®šçš„ç±»å‹æ˜¯Duckè¶…ç±»ï¼Œé‚£è¦æ€ä¹ˆæ‰èƒ½è°ƒç”¨è‡ªå·±çš„display ?
 	}
 }

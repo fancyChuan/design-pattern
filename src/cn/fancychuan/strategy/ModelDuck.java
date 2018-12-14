@@ -7,6 +7,6 @@ public class ModelDuck extends Duck {
 	}
 	
 	public void display() {
-		System.out.println("����һֻ model Ѽ..");
+		System.out.println("这是一只 model 鸭..");
 	}
 }
