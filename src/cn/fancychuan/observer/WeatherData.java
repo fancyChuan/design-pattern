@@ -2,13 +2,13 @@ package cn.fancychuan.observer;
 
 import java.util.ArrayList;
 
-public class WeatherData implements Subject {
+public class WeatherData implements Subject { // 继承一个接口需要实现接口中的所有方法
     private ArrayList observers;  // 用来记录注册的观察者
     private float temperature; // TODO: 为什么这里要用private
     private float humidity;
     private float pressure;
 
-    public WeatherData(){ // 构造方法不能加void，这里如果w为public void WeatherData就会导致observers没有初始化，报NullPointerException的错误
+    public WeatherData(){ // 构造方法不能加void，这里如果为public void WeatherData就会导致observers没有初始化，报NullPointerException的错误
         observers = new ArrayList(); // 在构造器中初始化
     }
 
