@@ -6,4 +6,9 @@ public class NYStyleCheesePizza extends Pizza {
 
         toppings.add("高级cheese");
     }
+
+    @Override
+    public void prepare() {
+
+    }
 }
