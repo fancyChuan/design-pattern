@@ -6,4 +6,9 @@ public class NYStyleClamPizza extends Pizza {
 
         toppings.add("二级奶酪");
     }
+
+    @Override
+    public void prepare() {
+
+    }
 }
