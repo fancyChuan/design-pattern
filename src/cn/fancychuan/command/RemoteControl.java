@@ -10,7 +10,7 @@ public class RemoteControl {
 
         Command noCommand = new NoCommand();
         for (int i=0; i<7; i++) {
-            onCommands[i] = noCommand;
+            onCommands[i] = noCommand; // 这里的初始化有个技巧：为了防止按钮执行命令的时候出错，先全部填充为 空命令NoCommand 什么都不做
             offCommands[i] = noCommand;
         }
     }
