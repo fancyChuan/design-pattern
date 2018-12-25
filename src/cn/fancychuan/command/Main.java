@@ -35,8 +35,31 @@ public class Main {
         remoteControl.onButtonWasPressed(1);
     }
 
+    public static void testMacroCommand() {
+        RemoteControl remoteControl = new RemoteControl();
+
+        Light livingRoomLight = new Light("living room");
+        Stereo stereo = new Stereo();
+
+        // 配置功能到命令对象
+        LightOnCommand lightOnCommand = new LightOnCommand(livingRoomLight);
+        LightOffCommand lightOffCommand = new LightOffCommand(livingRoomLight);
+        StereoOnWithCDCommand stereoOn = new StereoOnWithCDCommand(stereo);
+
+        Command[] partOn = {lightOnCommand, stereoOn};
+        // 创建宏命令
+        MacroCommand partOnMacro = new MacroCommand(partOn);
+
+        // 绑定到遥控器
+        remoteControl.setCommand(0, partOnMacro, new NoCommand());
+
+        // 按下遥控器 按钮0
+        remoteControl.onButtonWasPressed(0);
+    }
+
     public static void main(String[] args) {
         // testSimpleControl();
-        testRemoteControl();
+        // testRemoteControl();
+        testMacroCommand();
     }
 }
