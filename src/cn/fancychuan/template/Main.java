@@ -10,6 +10,7 @@ package cn.fancychuan.template;
  *      好莱坞原则：别调用高级组件（父类）、让高级组件调用低级组件（子类） 见 CaffeineBeverageWithHook
  *                子类只是用来提供一些实现细节
  *
+ * TODO：java API中的钩子函数案例未动手实现
  *
  */
 public class Main {
