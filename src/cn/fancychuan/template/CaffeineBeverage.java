@@ -7,6 +7,7 @@ public abstract class CaffeineBeverage { // 使用抽象类，让子类更自由
         brew();
         pourIncup();
         addCondiments();
+        hook();
     }
 
     abstract void brew(); // 抽象方法，延迟到子类中去实现
@@ -20,5 +21,7 @@ public abstract class CaffeineBeverage { // 使用抽象类，让子类更自由
     void pourIncup() {
         System.out.println("倒进杯子...");
     }
+
+    void hook() {} // 默认不做事情的方法，成为 hook "钩子"
 
 }
