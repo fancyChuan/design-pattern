@@ -16,6 +16,8 @@ public class DinerMenu {
         addItem("f", "这是f", false, 15.25);
     }
 
+
+
     public void addItem(String name, String description, boolean vegatarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegatarian, price);
         if (numberOfItems >= MAX_ITEMS) {
