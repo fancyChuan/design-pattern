@@ -1,7 +1,7 @@
 package cn.fancychuan.iterator;
 
 import java.util.ArrayList;
-
+import java.util.Iterator;
 
 public class PancakeHouseIterator implements Iterator {
     ArrayList menuItems;

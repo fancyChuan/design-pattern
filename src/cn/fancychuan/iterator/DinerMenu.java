@@ -1,6 +1,9 @@
 package cn.fancychuan.iterator;
 
-public class DinerMenu {
+import java.util.Iterator;
+
+// public class DinerMenu {
+public class DinerMenu implements Menu { // 优化的地方，方便Waitress构造的时候统一类型
     static final int MAX_ITEMS = 5;
     int numberOfItems = 0;
     MenuItem[] menuItems; // 用一个MenuItem类型的数组来存放每个MenuItem

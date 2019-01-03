@@ -1,8 +1,10 @@
 package cn.fancychuan.iterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class PancakeHouseMenu {
+//public class PancakeHouseMenu{
+public class PancakeHouseMenu implements Menu { // 优化的地方，让Waitress能够统一管理菜单
     ArrayList menuItems;
 
     public PancakeHouseMenu() {
