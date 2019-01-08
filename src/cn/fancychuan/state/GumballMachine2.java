@@ -7,6 +7,8 @@ public class GumballMachine2 implements State {
     State hasQuarterState;
     State soldState;
 
+    State winnerState;
+
     State state = soldOutState;
     int count = 0;
 
@@ -16,6 +18,7 @@ public class GumballMachine2 implements State {
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
         soldState = new SoldState(this);
+        winnerState = new WinnerState(this);
 
         if (numberGumball > 0) {
             state = noQuarterState;
@@ -36,7 +39,7 @@ public class GumballMachine2 implements State {
     }
 
     public void dispense() {
-
+        state.dispense();
     }
 
     public void releaseBall() {
@@ -64,6 +67,10 @@ public class GumballMachine2 implements State {
 
     public State getSoldState() {
         return soldState;
+    }
+
+    public State getWinnerState() {
+        return winnerState;
     }
 
     public int getCount() {
